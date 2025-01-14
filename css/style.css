@@ -1,0 +1,46 @@
+.text {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+.heading {
+  color: lightpink;
+}
+#abc {
+  color: red;
+}
+
+/*  {
+  font-size: 28px;
+}
+
+#main-heading {
+  background: red;
+}
+.heading {
+  color: blue;
+  text-align: center;
+}
+.bg-gray {
+  background: #c6c6c6;
+}
+.p-4 {
+  padding: 40px;
+}
+.bg-red {
+  background: red;
+}
+.m-4 {
+  margin: 40px;
+}
+.heading {
+  color: green;
+  text-align: center;
+}
+
+p.text {
+  color: blue;
+  font-size: 12px !important;
+} */

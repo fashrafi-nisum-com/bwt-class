@@ -1,0 +1,23 @@
+body {
+  font-size: 40px;
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.text {
+  color: brown;
+}
+
+.myDiv {
+  margin: 10px; /* apply all side */
+  padding: 20px;
+  border: 4px double red;
+  border-radius: 25px;
+  height: 100px;
+  overflow: scroll;
+  position: relative;
+}
+
+.myDiv > p {
+  color: blue;
+}
