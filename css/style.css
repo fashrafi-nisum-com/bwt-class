@@ -8,11 +8,14 @@
   width: 100%;
   margin: 100px;
 }
-.box {
+div.box {
   border: 1px solid red;
   width: 100px;
   height: 100px;
   display: inline-block;
+}
+a.box {
+  display: block;
 }
 #box-3 {
   position: fixed;
@@ -23,20 +26,112 @@
   position: sticky;
   top: 0px;
 }
-
-#box-1:hover {
-  background-color: aqua;
-  text-align: center;
-  color: blue;
-  cursor: pointer;
-}
 p {
   position: sticky;
-  top: 50px;
+  top: 100px;
 }
 button:hover {
   background-color: aqua;
   text-align: center;
   color: blue;
   cursor: pointer;
+}
+button {
+  position: sticky;
+  top: 120px;
+}
+.box:hover {
+  background: #000;
+  color: red;
+}
+/* input:hover {
+  background: #000;
+} */
+/* input:focus {
+  background-color: red;
+  outline: solid 5px green;
+  color: #fff;
+} */
+/* input[type="email"]:focus {
+  background-color: red;
+  outline: solid 5px green;
+  color: #fff;
+} */
+
+ul > li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ul > li:first-child {
+  background: #000;
+  color: white;
+}
+ul > li:nth-child(even) {
+  background: red;
+  color: white;
+}
+ul > li:nth-child(odd) {
+  background: green;
+  color: white;
+} */
+/* :not(p) {
+  position: sticky;
+  top: 100px;
+} */
+
+ul::after {
+  content: "This is after.";
+  background: rgb(44, 35, 35);
+  color: white;
+}
+
+ul::before {
+  content: "This is before.";
+  background: #fff;
+  color: red;
+}
+
+p::first-letter {
+  font-size: 30px;
+  color: red;
+}
+p::first-line {
+  color: green;
+}
+
+.box-tran {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  transition-duration: 1s;
+  transition-property: width;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-in;
+}
+.box-tran:hover {
+  width: 400px;
+}
+
+@keyframes stretch {
+  0% {
+    transform: rotate(0deg);
+  }
+  /* 25% { transform: rotate(90deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(270deg);} */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box-an {
+  width: 30px;
+  height: 30px;
+  background: red;
+  animation-name: stretch;
+  animation-duration: 1s;
+  transition-property: width;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
