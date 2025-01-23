@@ -113,22 +113,38 @@ p::first-line {
   width: 400px;
 }
 
-@keyframes stretch {
+@keyframes bwt {
   0% {
     transform: rotate(0deg);
   }
-  /* 25% { transform: rotate(90deg);}
-  50% { transform: rotate(180deg);}
-  75% { transform: rotate(270deg);} */
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
   100% {
     transform: rotate(360deg);
   }
+
+  /* 0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  } */
 }
 .box-an {
   width: 30px;
   height: 30px;
   background: red;
-  animation-name: stretch;
+  animation-name: bwt;
   animation-duration: 1s;
   transition-property: width;
   animation-delay: 0.5s;

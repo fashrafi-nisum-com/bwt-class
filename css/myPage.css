@@ -1,0 +1,88 @@
+.container {
+  background-color: rgb(233, 233, 255);
+  margin: 0px;
+}
+
+@keyframes bwt {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bwt-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.box-an {
+  width: 30px;
+  height: 30px;
+  background: red;
+  animation-name: bwt;
+  animation-duration: 1s;
+  transition-property: width;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-top: 10px;
+}
+p {
+  font-size: 68px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  border: solid 1px;
+}
+
+@media only screen and (max-width: 786px) {
+  .container {
+    background-color: red;
+  }
+
+  .box-an {
+    animation-name: bwt-scale;
+    background: rgb(0, 0, 0);
+    visibility: visible;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 48px;
+  }
+  nav > a {
+    display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    background-color: green;
+  }
+  .box-an {
+    animation-name: bwt;
+    background: white;
+    visibility: hidden;
+  }
+  p {
+    font-size: 28px;
+  }
+  nav > a {
+    display: block;
+  }
+}
